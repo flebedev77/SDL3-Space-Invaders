@@ -350,7 +350,7 @@ SDL_AppResult SDL_AppIterate(void *appstate)
     if (config::isSwitchingNextStage)
     {
         SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-        SDL_RenderDebugText(renderer, config::windowWidth / 2 - 10, config::windowHeight / 2, ("Stage " + std::to_string(config::stageNum)).c_str());
+        SDL_RenderDebugText(renderer, config::windowWidth / 2 - 25, config::windowHeight / 2, ("Stage " + std::to_string(config::stageNum)).c_str());
 
         config::switchingNextStageDelay += config::deltaTime;
         if (config::switchingNextStageDelay > config::switchingNextStageRate)
